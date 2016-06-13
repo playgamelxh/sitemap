@@ -147,6 +147,17 @@ class Base
             echo "超过当天最大数目:" . date('Y-m-d') . "\r\n";
             return false;
         }
+        
+        //如果超过单个文件最大数
+        if ($this->urlNum >= $this->maxUrlNum) {
+
+            //写入旧文件
+            $this->close();
+
+            //开始新文件
+            $this->fileNum++;
+        }
+
         //如果对象不存在,新建对象
         if (!is_object($this->xmlObj)) {
             $this->start();
@@ -163,15 +174,6 @@ class Base
         //写入当天计数
         $this->writeDayNum();
 
-        //如果超过单个文件最大数
-        if ($this->urlNum >= $this->maxUrlNum) {
-
-            //写入旧文件
-            $this->close();
-
-            //开始新文件
-            $this->fileNum++;
-        }
         return true;
     }
 
