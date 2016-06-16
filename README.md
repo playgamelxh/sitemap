@@ -31,6 +31,6 @@
 * $indexUrl = '';               //索引文件xml文档标签前的内容
 * $indexLabel = 'sitemapindex'; //索引文件xml文档标签
 * $indexDataModel = array();    //索引文件数据模型
-#使用简介
+# 使用简介
 具体可以参看 index.php文件 中样例
 
