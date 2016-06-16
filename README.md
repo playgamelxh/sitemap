@@ -1,9 +1,9 @@
-#项目简介
+# 项目简介
 该类库用于快速生成网站地图，目前支持包括谷歌、百度、神马、好搜，搜狗这几种搜索引擎。
-#使用简介
-* 具体可以参考index.php的样例代码
-#类库简介
-##类文件简介
+
+# 类库简介
+
+## 类文件简介
 * Xml.php  操作xml的简单类库
 * Base.php 生成站点地图的基本类库
 * Google.php 谷歌站点地图类库
@@ -11,8 +11,8 @@
 * Haosou.php 好搜站点地图类库
 * Shenma.php 神马站点地图类库
 * Sougou.php 搜索站点地图类库
-***
-##配置参数简介
+
+## 配置参数简介
 * $isCompress = true;           //是否采用压缩
 * $compSuffix = '.gz';          //开启压缩的后缀
 * $maxFileNum = 100;            //最大子文件数目
@@ -35,3 +35,5 @@
 * $indexLabel = 'sitemapindex'; //索引文件xml文档标签
 * $indexDataModel = array();    //索引文件数据模型
 
+# 使用简介
+具体可以参考index.php的样例代码
